@@ -31,6 +31,26 @@
             bottom: 0;
         }
 
+        #right {
+            line-height: normal;
+            background-color: #e0f2f0;
+            width: auto;
+            padding: 0%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        ＃footer {
+            backgroudーcolor:#0c1f27;
+            color:#20b2aa;
+            clear:both;
+            text-align:center;
+            padding:35px;
+        }
+
+
         #main {
             margin-left: 140px;
             padding-left: 150px;
@@ -65,8 +85,9 @@
 
     <div id="article">
             <div id="nav">
-                <a href="#type1" class="catlog">案件一覧</a><br>
-                <a href="#type2" class="catlog">人材一覧</a><br>
+                <a href="#type1" class="catlog">情報一覧</a><br>
+                <a href="#type2" class="catlog">メール</a><br>
+                <a href="#type2" class="catlog">ヘルプ</a><br>
             </div>
 
             
@@ -74,11 +95,6 @@
     <div id="main">
             <div class="content">
                 <h2><a name="type1">案件一覧</a></h2>
-                <a href="https://connect_to_companyDB" class="option">情報追加</a>
-                <a href="https://connect_to_companyDB" class="option">情報変更</a>
-                <a href="https://connect_to_companyDB" class="option">キーワード検索</a>
-                <a href="https://connect_to_companyDB" class="option">マッチング</a>
-                    <br/>
                     <br/>
                     <body>
                         <table border="1">
@@ -87,18 +103,11 @@
                             <td>場所</td><td>期間</td><td>内容</td><td>人数</td>
                         </tr>
                         </table>
-
                     </body>
                     <hr size="1">
             </div>
             <div class="content">
                 <h2><a name="type2">人材一覧</a></h2>
-                <a href="https://connect_to_companyDB" class="option">情報追加</a>
-                <a href="https://connect_to_companyDB" class="option">情報変更</a>
-                <a href="https://connect_to_companyDB" class="option">キーワード検索</a>
-                <a href="https://connect_to_companyDB" class="option">マッチング</a>
-                
-                <br/>
                 <body>
                     <table border="1">
                         <tr>
@@ -106,9 +115,33 @@
                             <td>単金</td><td>国籍</td><td>備考</td>
                         </tr>
                     </table>
+                    <input type="submit" value="案件情報追加"/>
+                    <input type="submit" value="人材情報追加"/>
                 </body>
                 <hr size="1">
             </div>    
+
+        <div id="select">
+            <div id="right">
+                <table border="1">
+                    <tr>
+                        <th>条件</th>
+                        <td>
+                            <select name="requirement">
+                                <option value="1">最新20件</option>
+                                <option value="2">会社</option>
+                                <option value="3">技能</option>
+                                <option value="4">最寄駅</option>
+                                <option value="5">年齢</option>
+                                <option value="6">メール</option>
+                                <option value="7">単価</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>       
       
     
